@@ -20,7 +20,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-FROM openjdk:8-jdk-slim as builder
+FROM openjdk:11-jdk as builder
 
 # Install tools required by FOP
 WORKDIR /usr/local
