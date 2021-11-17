@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   liblcms2-2 \
   fonts-dejavu-core
 
-FROM gcr.io/distroless/java:8
+FROM gcr.io/distroless/java:11
 
 # Copy over dependancies for Apache FOP, missing from gcr's JRE
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libfreetype.so.6 /usr/lib/x86_64-linux-gnu/libfreetype.so.6
