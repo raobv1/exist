@@ -47,7 +47,6 @@ COPY --from=builder /usr/share/fonts/truetype/dejavu /usr/share/fonts/truetype/d
 # Copy eXist-db
 COPY LICENSE /exist/LICENSE
 COPY autodeploy /exist/autodeploy
-COPY *.xar /exist/autodeploy
 COPY etc /exist/etc
 COPY lib /exist/lib
 COPY logs /exist/logs
